@@ -1,0 +1,182 @@
+{
+    "sourceFile": "wp-content/themes/landingtesttheme/src/reset.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 41,
+            "patches": [
+                {
+                    "date": 1677939980702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1677939995704,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,6 @@\n $font-poppins: 'Poppins', sans-serif;\n \n \n+body{\n+    font-family: $font-poppins;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677940061757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,9 @@\n \n \n body{\n     font-family: $font-poppins;\n+}\n+\n+.header-h1{\n+    font-size: 3rem;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677940141153,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,12 @@\n-$font-poppins: 'Poppins', sans-serif;\n+// --- FONTS ---\n+$f-poppins: 'Poppins', sans-serif;\n \n+// --- COLORS ---\n+$f-white: #FFF;\n \n body{\n-    font-family: $font-poppins;\n+    font-family: $f-poppins;\n }\n \n .header-h1{\n     font-size: 3rem;\n"
+                },
+                {
+                    "date": 1677940148741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n // --- FONTS ---\n $f-poppins: 'Poppins', sans-serif;\n \n // --- COLORS ---\n-$f-white: #FFF;\n+$c-white: #FFF;\n \n body{\n     font-family: $f-poppins;\n }\n"
+                },
+                {
+                    "date": 1677940210495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,6 @@\n }\n \n .header-h1{\n     font-size: 3rem;\n+    font-weight: 700;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677940379543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,16 @@\n body{\n     font-family: $f-poppins;\n }\n \n+\n+.button{\n+    border-width: 2px;\n+    border-style: solid;\n\\ No newline at end of file\n+    border-radius: 10px;\n+}\n+\n .header-h1{\n     font-size: 3rem;\n     font-weight: 700;\n-}\n+}\n+\n"
+                },
+                {
+                    "date": 1677940469902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,13 +9,21 @@\n }\n \n \n .button{\n+    color: $c-white;\n+    background-color: transparent;\n+    border-color: $c-white;\n     border-width: 2px;\n     border-style: solid;\n     border-radius: 10px;\n }\n \n+.button__highlight{\n\\ No newline at end of file\n+\n+}\n+\n .header-h1{\n     font-size: 3rem;\n     font-weight: 700;\n-}\n+}\n+\n"
+                },
+                {
+                    "date": 1677940478250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n     border-color: $c-white;\n     border-width: 2px;\n     border-style: solid;\n     border-radius: 10px;\n+    padding: 1rem 2rem;\n }\n \n .button__highlight{\n \n@@ -24,5 +25,6 @@\n \n .header-h1{\n     font-size: 3rem;\n     font-weight: 700;\n-}\n\\ No newline at end of file\n+}\n+\n"
+                },
+                {
+                    "date": 1677940495346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,11 @@\n     background-color: transparent;\n     border-color: $c-white;\n     border-width: 2px;\n     border-style: solid;\n-    border-radius: 10px;\n+    border-radius: 100px;\n     padding: 1rem 2rem;\n+    text-decoration: none;\n }\n \n .button__highlight{\n \n"
+                },
+                {
+                    "date": 1677940626187,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,10 @@\n     border-color: $c-white;\n     border-width: 2px;\n     border-style: solid;\n     border-radius: 100px;\n+    margin-top: 1rem;\n+    margin-bottom: 1rem;\n     padding: 1rem 2rem;\n     text-decoration: none;\n }\n \n"
+                },
+                {
+                    "date": 1677940743366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,10 @@\n     text-decoration: none;\n }\n \n .button__highlight{\n-\n+    background-color: $c-green;\n+    border-color: $c-green;\n }\n \n .header-h1{\n     font-size: 3rem;\n"
+                },
+                {
+                    "date": 1677940882049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n $f-poppins: 'Poppins', sans-serif;\n \n // --- COLORS ---\n $c-white: #FFF;\n+$c-green: #05AB6E\n \n body{\n     font-family: $f-poppins;\n }\n"
+                },
+                {
+                    "date": 1677940892162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n $f-poppins: 'Poppins', sans-serif;\n \n // --- COLORS ---\n $c-white: #FFF;\n-$c-green: #05AB6E\n+$c-green: #05AB6E;\n \n body{\n     font-family: $f-poppins;\n }\n"
+                },
+                {
+                    "date": 1677940908434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n body{\n     font-family: $f-poppins;\n }\n \n-\n .button{\n     color: $c-white;\n     background-color: transparent;\n     border-color: $c-white;\n"
+                },
+                {
+                    "date": 1677942802009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n \n // --- COLORS ---\n $c-white: #FFF;\n $c-green: #05AB6E;\n+$c-blue: #0779E4;\n \n body{\n     font-family: $f-poppins;\n }\n@@ -31,4 +32,7 @@\n     font-size: 3rem;\n     font-weight: 700;\n }\n \n+.cta{\n+    background-color: ;\n+}\n"
+                },
+                {
+                    "date": 1677942809212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,6 +33,6 @@\n     font-weight: 700;\n }\n \n .cta{\n-    background-color: ;\n+    background-color: $c-blue;\n }\n"
+                },
+                {
+                    "date": 1677942847445,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,6 +33,7 @@\n     font-weight: 700;\n }\n \n .cta{\n+    color: $c-white;\n     background-color: $c-blue;\n }\n"
+                },
+                {
+                    "date": 1677942912152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,12 +28,17 @@\n     border-color: $c-green;\n }\n \n .header-h1{\n-    font-size: 3rem;\n+    font-size: 2.5rem;\n     font-weight: 700;\n }\n \n+.header-h2{\n+    font-size: 2.5rem;\n+    font-weight: 700;\n+}\n+\n .cta{\n     color: $c-white;\n     background-color: $c-blue;\n }\n"
+                },
+                {
+                    "date": 1677942921076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,15 +28,15 @@\n     border-color: $c-green;\n }\n \n .header-h1{\n-    font-size: 2.5rem;\n+    font-size: 3rem;\n     font-weight: 700;\n }\n \n .header-h2{\n     font-size: 2.5rem;\n-    font-weight: 700;\n+    font-weight: 600;\n }\n \n .cta{\n     color: $c-white;\n"
+                },
+                {
+                    "date": 1677943287936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,5 +40,6 @@\n \n .cta{\n     color: $c-white;\n     background-color: $c-blue;\n+    border-radius: 20px;\n }\n"
+                },
+                {
+                    "date": 1677943323952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,5 +41,6 @@\n .cta{\n     color: $c-white;\n     background-color: $c-blue;\n     border-radius: 20px;\n+    text-align: center;\n }\n"
+                },
+                {
+                    "date": 1677943343804,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,5 +42,7 @@\n     color: $c-white;\n     background-color: $c-blue;\n     border-radius: 20px;\n     text-align: center;\n+    padding-top: 3rem;\n+    padding-bottom: 3rem;\n }\n"
+                },
+                {
+                    "date": 1677943354428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,7 +42,7 @@\n     color: $c-white;\n     background-color: $c-blue;\n     border-radius: 20px;\n     text-align: center;\n-    padding-top: 3rem;\n-    padding-bottom: 3rem;\n+    padding-top: 4rem;\n+    padding-bottom: 5rem;\n }\n"
+                },
+                {
+                    "date": 1677943388576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,8 @@\n \n .cta{\n     color: $c-white;\n     background-color: $c-blue;\n+    height: 350px;\n     border-radius: 20px;\n     text-align: center;\n-    padding-top: 4rem;\n-    padding-bottom: 5rem;\n }\n"
+                },
+                {
+                    "date": 1677943414530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,10 @@\n \n .cta{\n     color: $c-white;\n     background-color: $c-blue;\n-    height: 350px;\n     border-radius: 20px;\n     text-align: center;\n+    height: 350px;\n+    display: flex;\n+    flex-direction: column;\n }\n"
+                },
+                {
+                    "date": 1677943426603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,5 +45,6 @@\n     text-align: center;\n     height: 350px;\n     display: flex;\n     flex-direction: column;\n+    justify-content: center;\n }\n"
+                },
+                {
+                    "date": 1677943659998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,11 @@\n     color: $c-white;\n     background-color: $c-blue;\n     border-radius: 20px;\n     text-align: center;\n+    position: relative;\n+    z-index: 100;\n+    margin-top: -100px;\n     height: 350px;\n     display: flex;\n     flex-direction: column;\n     justify-content: center;\n"
+                },
+                {
+                    "date": 1677943827677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n }\n \n .cta{\n     color: $c-white;\n-    background-color: $c-blue;\n+    background-color: $c-green;\n     border-radius: 20px;\n     text-align: center;\n     position: relative;\n     z-index: 100;\n"
+                },
+                {
+                    "date": 1677944052077,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,4 +50,8 @@\n     display: flex;\n     flex-direction: column;\n     justify-content: center;\n }\n+\n+.cta__desc{\n+    opacity: .6;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677944156395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,5 +53,9 @@\n }\n \n .cta__desc{\n     opacity: .6;\n+}\n+\n+.cta__form{\n+    display: flex;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677944241970,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n // --- COLORS ---\n $c-white: #FFF;\n $c-green: #05AB6E;\n $c-blue: #0779E4;\n+$c-orange: #FF8554;\n \n body{\n     font-family: $f-poppins;\n }\n@@ -27,8 +28,13 @@\n     background-color: $c-green;\n     border-color: $c-green;\n }\n \n+.button__orange{\n+    background-color: $c-orange;\n+    border-color: $c-orange;\n+}\n+\n .header-h1{\n     font-size: 3rem;\n     font-weight: 700;\n }\n@@ -57,5 +63,6 @@\n }\n \n .cta__form{\n     display: flex;\n+    justify-content: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677944269783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,10 +17,8 @@\n     border-color: $c-white;\n     border-width: 2px;\n     border-style: solid;\n     border-radius: 100px;\n-    margin-top: 1rem;\n-    margin-bottom: 1rem;\n     padding: 1rem 2rem;\n     text-decoration: none;\n }\n \n"
+                },
+                {
+                    "date": 1677944339821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,5 +62,10 @@\n \n .cta__form{\n     display: flex;\n     justify-content: center;\n+}\n+\n+.cta__form input{\n+    width: 300px;\n+    padding: 1rem 2rem;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677944364824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,31 +41,4 @@\n     font-size: 2.5rem;\n     font-weight: 600;\n }\n \n-.cta{\n-    color: $c-white;\n-    background-color: $c-green;\n-    border-radius: 20px;\n-    text-align: center;\n-    position: relative;\n-    z-index: 100;\n-    margin-top: -100px;\n-    height: 350px;\n-    display: flex;\n-    flex-direction: column;\n-    justify-content: center;\n-}\n-\n-.cta__desc{\n-    opacity: .6;\n-}\n-\n-.cta__form{\n-    display: flex;\n-    justify-content: center;\n-}\n-\n-.cta__form input{\n-    width: 300px;\n-    padding: 1rem 2rem;\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677945710728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,4 +41,9 @@\n     font-size: 2.5rem;\n     font-weight: 600;\n }\n \n+.header-h4{\n+    font-weight: 500;\n+    color: $c-green;\n+}\n+\n"
+                },
+                {
+                    "date": 1677945719758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,9 @@\n     font-weight: 600;\n }\n \n .header-h4{\n+    font-size: 1rem;\n     font-weight: 500;\n     color: $c-green;\n }\n \n"
+                },
+                {
+                    "date": 1677945739470,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n     font-weight: 600;\n }\n \n .header-h4{\n-    font-size: 1rem;\n+    font-size: 16px;\n     font-weight: 500;\n     color: $c-green;\n }\n \n"
+                },
+                {
+                    "date": 1677945752889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n     font-weight: 600;\n }\n \n .header-h4{\n-    font-size: 16px;\n+    font-size: 1rem;\n     font-weight: 500;\n     color: $c-green;\n }\n \n"
+                },
+                {
+                    "date": 1677945766782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n     font-weight: 600;\n }\n \n .header-h4{\n+    color: $c-green;\n     font-size: 1rem;\n     font-weight: 500;\n-    color: $c-green;\n }\n \n"
+                },
+                {
+                    "date": 1677946227790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n $c-white: #FFF;\n $c-green: #05AB6E;\n $c-blue: #0779E4;\n $c-orange: #FF8554;\n+$c-gray: #EFF0F6;\n \n body{\n     font-family: $f-poppins;\n }\n"
+                },
+                {
+                    "date": 1677946428131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,13 @@\n     font-size: 2.5rem;\n     font-weight: 600;\n }\n \n+.header-h3{\n+    font-size: 1.25rem;\n+    font-weight: 500;\n+}\n+\n .header-h4{\n     color: $c-green;\n     font-size: 1rem;\n     font-weight: 500;\n"
+                }
+            ],
+            "date": 1677939980702,
+            "name": "Commit-0",
+            "content": "$font-poppins: 'Poppins', sans-serif;\n\n\n"
+        }
+    ]
+}

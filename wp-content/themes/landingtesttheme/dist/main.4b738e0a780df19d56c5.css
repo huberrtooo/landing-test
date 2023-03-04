@@ -1,3 +1,7 @@
+/*!********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/main.scss ***!
+  \********************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap);
 /*!************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./node_modules/aos/dist/aos.css ***!
   \************************************************************************************************************************/
@@ -953,9 +957,9 @@
 [data-aos=flip-down].aos-animate {
   transform: perspective(2500px) rotateX(0);
 }
-/*!********************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/main.scss ***!
-  \********************************************************************************************************/
+/*!************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/main.scss (1) ***!
+  \************************************************************************************************************/
 @charset "UTF-8";
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
@@ -11726,4 +11730,106 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.button {
+  color: #FFF;
+  background-color: transparent;
+  border-color: #FFF;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 100px;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+.button__highlight {
+  background-color: #05AB6E;
+  border-color: #05AB6E;
+}
+
+.button__orange {
+  background-color: #FF8554;
+  border-color: #FF8554;
+}
+
+.header-h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.header-h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.header-h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.header-h4 {
+  color: #05AB6E;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.hero {
+  height: 80vh;
+  background-size: cover;
+}
+
+.hero__content {
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+}
+
+.hero__desc p {
+  opacity: 0.6;
+}
+
+.cta {
+  color: #FFF;
+  background-color: #05AB6E;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  margin-top: -100px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cta__desc {
+  opacity: 0.6;
+}
+
+.cta__form {
+  display: flex;
+  justify-content: center;
+}
+
+.cta__form input {
+  width: 70%;
+  padding: 1rem 2rem;
+  border-radius: 100px;
+}
+
+.cta__search {
+  margin-left: -100px;
+}
+
+.services__box {
+  background-color: #EFF0F6;
+  border-radius: 20px;
+  padding: 2rem;
+  height: 100%;
 }

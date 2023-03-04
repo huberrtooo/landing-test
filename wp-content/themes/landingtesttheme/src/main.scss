@@ -1,2 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import "~bootstrap/scss/bootstrap";
 @import "reset";
+
+.hero{
+    height: 80vh;
+    background-size: cover;
+}
+
+.hero__content{
+    color: $c-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+}
+
+.hero__desc p{
+    opacity: .6;
+}
+
+.cta{
+    color: $c-white;
+    background-color: $c-green;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    z-index: 100;
+    margin-top: -100px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cta__desc{
+    opacity: .6;
+}
+
+.cta__form{
+    display: flex;
+    justify-content: center;
+}
+
+.cta__form input{
+    width: 70%;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+}
+
+.cta__search{
+    margin-left: -100px;
+}
+
+.services__box{
+    background-color: $c-gray;
+    border-radius: 20px;
+    padding: 2rem;
+    height: 100%;
+}

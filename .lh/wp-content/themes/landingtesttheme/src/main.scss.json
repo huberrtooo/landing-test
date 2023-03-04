@@ -1,0 +1,150 @@
+{
+    "sourceFile": "wp-content/themes/landingtesttheme/src/main.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 33,
+            "patches": [
+                {
+                    "date": 1677938893885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1677938932104,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,6 @@\n @import \"reset\";\n \n .hero{\n     height: 80vh;\n+    background-size: cover;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677939804073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,9 @@\n \n .hero{\n     height: 80vh;\n     background-size: cover;\n+}\n+\n+.hero__content{\n+    height: 80vh;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677939842609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,6 +6,10 @@\n     background-size: cover;\n }\n \n .hero__content{\n+    display: flex;\n+    flex-direction: column;\n+    justify-content: center;\n+    align-items: cen;\n     height: 80vh;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677939854151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,7 @@\n .hero__content{\n     display: flex;\n     flex-direction: column;\n     justify-content: center;\n-    align-items: cen;\n+    // align-items: center;\n     height: 80vh;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677939859929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,7 +9,6 @@\n .hero__content{\n     display: flex;\n     flex-direction: column;\n     justify-content: center;\n-    // align-items: center;\n     height: 80vh;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677939954954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');\n @import \"~bootstrap/scss/bootstrap\";\n @import \"reset\";\n \n .hero{\n"
+                },
+                {
+                    "date": 1677940107261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n     background-size: cover;\n }\n \n .hero__content{\n+    color: $c-white;\n     display: flex;\n     flex-direction: column;\n     justify-content: center;\n     height: 80vh;\n"
+                },
+                {
+                    "date": 1677940176399,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     background-size: cover;\n }\n \n .hero__content{\n-    color: $c-white;\n+    // color: $c-white;\n     display: flex;\n     flex-direction: column;\n     justify-content: center;\n     height: 80vh;\n"
+                },
+                {
+                    "date": 1677940184860,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     background-size: cover;\n }\n \n .hero__content{\n-    // color: $c-white;\n+    color: $c-white;\n     display: flex;\n     flex-direction: column;\n     justify-content: center;\n     height: 80vh;\n"
+                },
+                {
+                    "date": 1677940272087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,5 +12,9 @@\n     display: flex;\n     flex-direction: column;\n     justify-content: center;\n     height: 80vh;\n+}\n+\n+.hero__desc p{\n+    opacity: .6;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677944393998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,35 @@\n }\n \n .hero__desc p{\n     opacity: .6;\n+}\n+\n+.cta{\n+    color: $c-white;\n+    background-color: $c-green;\n+    border-radius: 20px;\n+    text-align: center;\n+    position: relative;\n+    z-index: 100;\n+    margin-top: -100px;\n+    height: 350px;\n+    display: flex;\n+    flex-direction: column;\n+    justify-content: center;\n+}\n+\n+.cta__desc{\n+    opacity: .6;\n+}\n+\n+.cta__form{\n+    display: flex;\n+    justify-content: center;\n+}\n+\n+.cta__form input{\n+    width: 300px;\n+    padding: 1rem 2rem;\n+    border-radius: 100px;\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677944407889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n     justify-content: center;\n }\n \n .cta__form input{\n-    width: 300px;\n+    width: 70%;\n     padding: 1rem 2rem;\n     border-radius: 100px;\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677944420493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n     justify-content: center;\n }\n \n .cta__form input{\n-    width: 70%;\n+    width: 100%;\n     padding: 1rem 2rem;\n     border-radius: 100px;\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677944526191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n     justify-content: center;\n }\n \n .cta__form input{\n-    width: 100%;\n+    width: 400px;\n     padding: 1rem 2rem;\n     border-radius: 100px;\n-\n+    margin-left: -50px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677944537660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n     justify-content: center;\n }\n \n .cta__form input{\n-    width: 400px;\n+    width: 500px;\n     padding: 1rem 2rem;\n     border-radius: 100px;\n     margin-left: -50px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677944567477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,12 +39,13 @@\n \n .cta__form{\n     display: flex;\n     justify-content: center;\n+    width: 100%;\n }\n \n .cta__form input{\n-    width: 500px;\n+    width: 100%;\n     padding: 1rem 2rem;\n     border-radius: 100px;\n     margin-left: -50px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677944579120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,6 +46,5 @@\n .cta__form input{\n     width: 100%;\n     padding: 1rem 2rem;\n     border-radius: 100px;\n-    margin-left: -50px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677944685792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,5 +46,9 @@\n .cta__form input{\n     width: 100%;\n     padding: 1rem 2rem;\n     border-radius: 100px;\n+}\n+\n+.cta__search{\n+    margin-left: -100px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677944709939,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n     width: 100%;\n }\n \n .cta__form input{\n-    width: 100%;\n+    width: 80%;\n     padding: 1rem 2rem;\n     border-radius: 100px;\n }\n \n"
+                },
+                {
+                    "date": 1677944762993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n     width: 100%;\n }\n \n .cta__form input{\n-    width: 80%;\n+    width: 100%;\n     padding: 1rem 2rem;\n     border-radius: 100px;\n }\n \n"
+                },
+                {
+                    "date": 1677944772905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n \n .cta__form{\n     display: flex;\n     justify-content: center;\n-    width: 100%;\n+    width: 80%;\n }\n \n .cta__form input{\n     width: 100%;\n"
+                },
+                {
+                    "date": 1677944796353,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n \n .cta__form{\n     display: flex;\n     justify-content: center;\n-    width: 80%;\n+    width: 100%;\n }\n \n .cta__form input{\n     width: 100%;\n"
+                },
+                {
+                    "date": 1677944812867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,10 @@\n .cta__form{\n     display: flex;\n     justify-content: center;\n     width: 100%;\n+    padding-left: 2rem;\n+    padding-right: 2rem;\n }\n \n .cta__form input{\n     width: 100%;\n"
+                },
+                {
+                    "date": 1677944844264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,10 +40,8 @@\n .cta__form{\n     display: flex;\n     justify-content: center;\n     width: 100%;\n-    padding-left: 2rem;\n-    padding-right: 2rem;\n }\n \n .cta__form input{\n     width: 100%;\n"
+                },
+                {
+                    "date": 1677944908172,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n }\n \n .cta__form input{\n     width: 100%;\n-    padding: 1rem 2rem;\n+    padding: 1.5rem 2rem;\n     border-radius: 100px;\n }\n \n .cta__search{\n"
+                },
+                {
+                    "date": 1677944922630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n }\n \n .cta__form input{\n     width: 100%;\n-    padding: 1.5rem 2rem;\n+    padding: 1rem 2rem;\n     border-radius: 100px;\n }\n \n .cta__search{\n"
+                },
+                {
+                    "date": 1677944959316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n \n .cta__form{\n     display: flex;\n     justify-content: center;\n-    width: 100%;\n+    width: 80%;\n }\n \n .cta__form input{\n     width: 100%;\n"
+                },
+                {
+                    "date": 1677945028045,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,10 +38,10 @@\n }\n \n .cta__form{\n     display: flex;\n-    justify-content: center;\n-    width: 80%;\n+    // justify-content: center;\n+    // width: 80%;\n }\n \n .cta__form input{\n     width: 100%;\n"
+                },
+                {
+                    "date": 1677945066638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n     // width: 80%;\n }\n \n .cta__form input{\n-    width: 100%;\n+    width: 80%;\n     padding: 1rem 2rem;\n     border-radius: 100px;\n }\n \n"
+                },
+                {
+                    "date": 1677945114739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,10 +38,9 @@\n }\n \n .cta__form{\n     display: flex;\n-    // justify-content: center;\n-    // width: 80%;\n+    justify-content: center;\n }\n \n .cta__form input{\n     width: 80%;\n"
+                },
+                {
+                    "date": 1677946303009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,12 +42,17 @@\n     justify-content: center;\n }\n \n .cta__form input{\n-    width: 80%;\n+    width: 70%;\n     padding: 1rem 2rem;\n     border-radius: 100px;\n }\n \n .cta__search{\n     margin-left: -100px;\n+}\n+\n+.services__box{\n+    background-color: $c-gray;\n+    border-radius: 20px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677946355487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,5 +54,6 @@\n \n .services__box{\n     background-color: $c-gray;\n     border-radius: 20px;\n+    padding: 2rem;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677946381523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,5 +55,6 @@\n .services__box{\n     background-color: $c-gray;\n     border-radius: 20px;\n     padding: 2rem;\n+    height: 100%;\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1677938893885,
+            "name": "Commit-0",
+            "content": "@import \"~bootstrap/scss/bootstrap\";\n@import \"reset\";\n\n.hero{\n    height: 80vh;\n}"
+        }
+    ]
+}

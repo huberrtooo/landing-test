@@ -11735,6 +11735,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+p {
+  font-size: 0.875rem;
+  line-height: 30px;
+  opacity: 0.6;
+}
+
 .button {
   color: #FFF;
   background-color: transparent;
@@ -11790,11 +11796,10 @@ body {
   height: 80vh;
 }
 
-.hero__desc p {
-  opacity: 0.6;
-}
-
 .cta {
+  background-image: url(ceea6800edd37ff3ff86.png);
+  background-repeat: no-repeat;
+  background-position: center;
   color: #FFF;
   background-color: #05AB6E;
   border-radius: 20px;
@@ -11806,10 +11811,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.cta__desc {
-  opacity: 0.6;
 }
 
 .cta__form {
@@ -11830,6 +11831,76 @@ body {
 .services__box {
   background-color: #EFF0F6;
   border-radius: 20px;
-  padding: 2rem;
+  padding: 1rem;
+  padding-top: 2rem;
   height: 100%;
+  text-align: center;
+}
+
+.pricing__box {
+  background: #FFF;
+  border-radius: 20px;
+  box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);
+  padding: 3rem 1.5rem;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.pricing__box:hover {
+  box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.218);
+}
+
+.pricing__more-info ul {
+  list-style-image: url(eae078c84c36fa97dc8d.svg);
+}
+
+.pricing ul li {
+  padding-bottom: 0.8rem;
+}
+
+.pricing__name {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.pricing__price {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.pricing__desc {
+  color: #AAAAAA;
+  opacity: 1;
+}
+
+.pricing__button {
+  color: #0779E4;
+  background-color: transparent;
+  border-color: #0779E4;
+}
+
+.pricing__box--green {
+  background-color: #05AB6E;
+  color: #FFF;
+}
+.pricing__box--green .pricing__desc {
+  color: #FFF;
+}
+.pricing__box--green .pricing__more-info ul {
+  list-style-image: url(ad0eb70d724fe6053ce3.svg);
+}
+.pricing__box--green .pricing__button {
+  color: #FFF;
+  background-color: transparent;
+  border-color: #FFF;
+}
+
+.cta--2 {
+  margin: 0;
+  background-image: url(15d6a2e0037b6295a304.png);
+  background-color: #0779E4;
+}
+
+.footer {
+  background-color: #011222;
 }

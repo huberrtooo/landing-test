@@ -71,10 +71,10 @@
                     <h2 class="header-h2"><?php the_field('services_header'); ?></h2>
                 </div>
                 <div class="col-12">
-                    <h2 class="header-h2"><?php the_field('services_desc'); ?></h2>
+                    <p><?php the_field('services_desc'); ?></p>
                 </div>
             </div>
-            <div class="row">
+            <div class="pt-5 row">
                 <?php
                 if (have_rows('services_boxes')) :
                     while (have_rows('services_boxes')) : the_row(); ?>
@@ -84,7 +84,7 @@
                                 if (!empty($icon)) : ?>
                                     <img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>" />
                                 <?php endif; ?>
-                                <h3 class="header-h3"><?php the_sub_field('name'); ?></h3>
+                                <h3 class="pt-4 pb-2 header-h3"><?php the_sub_field('name'); ?></h3>
                                 <p><?php the_sub_field('desc'); ?></p>
                             </div>
                         </div>
@@ -92,6 +92,71 @@
                 else :
                     echo ('Brak dodanych usług');
                 endif; ?>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pricing">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h4 class="header-h4"><?php the_field('pricing_subheader'); ?></h4>
+                </div>
+                <div class="col-12 py-3">
+                    <h2 class="header-h2"><?php the_field('pricing_header'); ?></h2>
+                </div>
+                <div class="col-12">
+                    <p><?php the_field('pricing_desc'); ?></p>
+                </div>
+            </div>
+            <div class="pt-5 row">
+                <?php
+                if (have_rows('pricing_boxes')) :
+                    while (have_rows('pricing_boxes')) : the_row(); ?>
+                        <div class="col-12 col-lg-4 p-3">
+                            <div class="pricing__box <?php if(get_sub_field('star')): echo('pricing__box--green'); endif; ?>">
+                                <div class="pricing__name"><?php the_sub_field('name'); ?></div>
+                                <div class="pt-2"><span class="pricing__price">$<?php the_sub_field('price'); ?></span>/Month</div>
+                                <div class="pt-5">
+                                    <p class="pricing__desc"><?php the_sub_field('desc'); ?></p>
+                                </div>
+                                <div class="pt-3 ps-2">
+                                    <div class="pricing__more-info"><?php the_sub_field('moreInfo'); ?></div>
+                                    <?php $link = get_sub_field('button');
+                                    if ($link) : ?>
+                                        <div class="py-3">
+                                            <a class="me-4 button pricing__button" href="<?php echo esc_url($link['url']); ?>"><?php echo esc_html($link['title']); ?></a>
+                                        </div>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                        </div>
+                <?php endwhile;
+                else :
+                    echo ('Brak dodanych cen');
+                endif; ?>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5">
+        <div class="container py-lg-5">
+            <div class="row">
+                <div class="col px-lg-5 cta cta--2">
+                    <div>
+                        <h2 class="header-h2"><?php the_field('cta2_header'); ?></h2>
+                    </div>
+                    <div class="pt-3 cta__desc">
+                        <p><?php the_field('cta2_desc'); ?></p>
+                    </div>
+                    <div class="px-lg-5 pt-4">
+                        <?php
+                        $link = get_field('cta2_button');
+                        if ($link) : ?>
+                            <a class="me-4 button" href="<?php echo esc_url($link['url']); ?>"><?php echo esc_html($link['title']); ?></a>
+                        <?php endif; ?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

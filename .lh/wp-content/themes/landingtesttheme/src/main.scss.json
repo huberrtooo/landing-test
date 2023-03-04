@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 33,
+            "activePatchIndex": 87,
             "patches": [
                 {
                     "date": 1677938893885,
@@ -140,6 +140,222 @@
                 {
                     "date": 1677946381523,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,5 +55,6 @@\n .services__box{\n     background-color: $c-gray;\n     border-radius: 20px;\n     padding: 2rem;\n+    height: 100%;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677946535837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,5 +56,6 @@\n     background-color: $c-gray;\n     border-radius: 20px;\n     padding: 2rem;\n     height: 100%;\n+    text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677946680670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,12 +14,8 @@\n     justify-content: center;\n     height: 80vh;\n }\n \n-.hero__desc p{\n-    opacity: .6;\n-}\n-\n .cta{\n     color: $c-white;\n     background-color: $c-green;\n     border-radius: 20px;\n"
+                },
+                {
+                    "date": 1677946859686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,11 @@\n     margin-left: -100px;\n }\n \n .services__box{\n+    background-image: url(../assets/images/lines.png);\n+    background-repeat: no-repeat;\n+    background-position: center;\n     background-color: $c-gray;\n     border-radius: 20px;\n     padding: 2rem;\n     height: 100%;\n"
+                },
+                {
+                    "date": 1677946884599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,11 +48,8 @@\n     margin-left: -100px;\n }\n \n .services__box{\n-    background-image: url(../assets/images/lines.png);\n-    background-repeat: no-repeat;\n-    background-position: center;\n     background-color: $c-gray;\n     border-radius: 20px;\n     padding: 2rem;\n     height: 100%;\n"
+                },
+                {
+                    "date": 1677946929298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,11 @@\n     height: 80vh;\n }\n \n .cta{\n+    background-image: url(../assets/images/lines.png);\n+    background-repeat: no-repeat;\n+    background-position: center;\n     color: $c-white;\n     background-color: $c-green;\n     border-radius: 20px;\n     text-align: center;\n@@ -28,12 +31,8 @@\n     flex-direction: column;\n     justify-content: center;\n }\n \n-.cta__desc{\n-    opacity: .6;\n-}\n-\n .cta__form{\n     display: flex;\n     justify-content: center;\n }\n"
+                },
+                {
+                    "date": 1677946980522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,8 +49,9 @@\n \n .services__box{\n     background-color: $c-gray;\n     border-radius: 20px;\n-    padding: 2rem;\n+    padding-top: 2rem;\n+    padding-bottom: 1rem;\n     height: 100%;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677946992452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n \n .services__box{\n     background-color: $c-gray;\n     border-radius: 20px;\n+    padding: 1rem;\n     padding-top: 2rem;\n-    padding-bottom: 1rem;\n     height: 100%;\n     text-align: center;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677949335018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,22 +1,22 @@\n @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');\n @import \"~bootstrap/scss/bootstrap\";\n @import \"reset\";\n \n-.hero{\n+.hero {\n     height: 80vh;\n     background-size: cover;\n }\n \n-.hero__content{\n+.hero__content {\n     color: $c-white;\n     display: flex;\n     flex-direction: column;\n     justify-content: center;\n     height: 80vh;\n }\n \n-.cta{\n+.cta {\n     background-image: url(../assets/images/lines.png);\n     background-repeat: no-repeat;\n     background-position: center;\n     color: $c-white;\n@@ -31,27 +31,33 @@\n     flex-direction: column;\n     justify-content: center;\n }\n \n-.cta__form{\n+.cta__form {\n     display: flex;\n     justify-content: center;\n }\n \n-.cta__form input{\n+.cta__form input {\n     width: 70%;\n     padding: 1rem 2rem;\n     border-radius: 100px;\n }\n \n-.cta__search{\n+.cta__search {\n     margin-left: -100px;\n }\n \n-.services__box{\n+.services__box {\n     background-color: $c-gray;\n     border-radius: 20px;\n     padding: 1rem;\n     padding-top: 2rem;\n     height: 100%;\n     text-align: center;\n+}\n+\n+.pricing__box {\n+    border-radius: 20px;\n+    background: #fff;\n+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677949378806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,8 +56,8 @@\n     text-align: center;\n }\n \n .pricing__box {\n+    background: $c-white;\n     border-radius: 20px;\n-    background: #fff;\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677949416143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,5 +59,6 @@\n .pricing__box {\n     background: $c-white;\n     border-radius: 20px;\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);\n+    padding: 1rem;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677949430068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,6 +59,6 @@\n .pricing__box {\n     background: $c-white;\n     border-radius: 20px;\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);\n-    padding: 1rem;\n+    padding: 2rem 1rem;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677949449633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,6 +59,6 @@\n .pricing__box {\n     background: $c-white;\n     border-radius: 20px;\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);\n-    padding: 2rem 1rem;\n+    padding: 3rem 1rem;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677949618034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,5 +60,15 @@\n     background: $c-white;\n     border-radius: 20px;\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);\n     padding: 3rem 1rem;\n-}\n\\ No newline at end of file\n+}\n+\n+.pricing__name{\n+    font-size: 1.5rem;\n+    font-weight: 500;\n+}\n+\n+.pricing__price{\n+    font-size: 2rem;\n+}\n+\n"
+                },
+                {
+                    "date": 1677949663526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,6 +69,7 @@\n }\n \n .pricing__price{\n     font-size: 2rem;\n+    font-weight: 500;\n }\n \n"
+                },
+                {
+                    "date": 1677949741276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n     margin-left: -100px;\n }\n \n .services__box {\n-    background-color: $c-gray;\n+    background-color: $c-lightgray;\n     border-radius: 20px;\n     padding: 1rem;\n     padding-top: 2rem;\n     height: 100%;\n@@ -72,4 +72,8 @@\n     font-size: 2rem;\n     font-weight: 500;\n }\n \n+.df{\n+    color: $c-gray;\n+}\n+\n"
+                },
+                {
+                    "date": 1677949768971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,8 +72,8 @@\n     font-size: 2rem;\n     font-weight: 500;\n }\n \n-.df{\n+.pricing__desc{\n     color: $c-gray;\n }\n \n"
+                },
+                {
+                    "date": 1677949779377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,6 +74,7 @@\n }\n \n .pricing__desc{\n     color: $c-gray;\n+    opacity: 1;\n }\n \n"
+                },
+                {
+                    "date": 1677949791571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n .pricing__box {\n     background: $c-white;\n     border-radius: 20px;\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);\n-    padding: 3rem 1rem;\n+    padding: 3rem 2rem;\n }\n \n .pricing__name{\n     font-size: 1.5rem;\n"
+                },
+                {
+                    "date": 1677949802210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,9 @@\n .pricing__box {\n     background: $c-white;\n     border-radius: 20px;\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);\n-    padding: 3rem 2rem;\n+    padding: 3rem 1.5rem;\n }\n \n .pricing__name{\n     font-size: 1.5rem;\n"
+                },
+                {
+                    "date": 1677949946688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,8 +55,14 @@\n     height: 100%;\n     text-align: center;\n }\n \n+\n+.pricing ul{\n+    list-style-image: url('../assets/icons/bullet.svg');\n+\n+}\n+\n .pricing__box {\n     background: $c-white;\n     border-radius: 20px;\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);\n"
+                },
+                {
+                    "date": 1677949978520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,10 @@\n \n \n .pricing ul{\n     list-style-image: url('../assets/icons/bullet.svg');\n+    display: flex;\n+    align-items: center;\n \n }\n \n .pricing__box {\n"
+                },
+                {
+                    "date": 1677950001058,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,9 +59,11 @@\n \n .pricing ul{\n     list-style-image: url('../assets/icons/bullet.svg');\n     display: flex;\n+    flex-direction: column;\n     align-items: center;\n+    justify-content: center;\n \n }\n \n .pricing__box {\n"
+                },
+                {
+                    "date": 1677950032062,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,15 +58,12 @@\n \n \n .pricing ul{\n     list-style-image: url('../assets/icons/bullet.svg');\n-    display: flex;\n-    flex-direction: column;\n-    align-items: center;\n-    justify-content: center;\n-\n }\n \n+\n+\n .pricing__box {\n     background: $c-white;\n     border-radius: 20px;\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);\n"
+                },
+                {
+                    "date": 1677950164467,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,10 +60,13 @@\n .pricing ul{\n     list-style-image: url('../assets/icons/bullet.svg');\n }\n \n+li span {\n+    position: relative;\n+    left: -10px;\n+  }\n \n-\n .pricing__box {\n     background: $c-white;\n     border-radius: 20px;\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);\n"
+                },
+                {
+                    "date": 1677950176479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,9 +62,9 @@\n }\n \n li span {\n     position: relative;\n-    left: -10px;\n+    left: 30px;\n   }\n \n .pricing__box {\n     background: $c-white;\n"
+                },
+                {
+                    "date": 1677950207788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,12 +60,11 @@\n .pricing ul{\n     list-style-image: url('../assets/icons/bullet.svg');\n }\n \n-li span {\n-    position: relative;\n-    left: 30px;\n-  }\n+.pricing ul li::marker{\n+    padding-top: 10px;\n+}\n \n .pricing__box {\n     background: $c-white;\n     border-radius: 20px;\n"
+                },
+                {
+                    "date": 1677950219231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n     list-style-image: url('../assets/icons/bullet.svg');\n }\n \n .pricing ul li::marker{\n-    padding-top: 10px;\n+    margin-top: 10px;\n }\n \n .pricing__box {\n     background: $c-white;\n"
+                },
+                {
+                    "date": 1677950231055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n     list-style-image: url('../assets/icons/bullet.svg');\n }\n \n .pricing ul li::marker{\n-    margin-top: 10px;\n+    margin-top: 10px !important;\n }\n \n .pricing__box {\n     background: $c-white;\n"
+                },
+                {
+                    "date": 1677950259063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,14 +58,15 @@\n \n \n .pricing ul{\n     list-style-image: url('../assets/icons/bullet.svg');\n-}\n-\n-.pricing ul li::marker{\n     margin-top: 10px !important;\n }\n \n+// .pricing ul li::marker{\n+\n+// }\n+\n .pricing__box {\n     background: $c-white;\n     border-radius: 20px;\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);\n"
+                },
+                {
+                    "date": 1677950309209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,14 +58,14 @@\n \n \n .pricing ul{\n     list-style-image: url('../assets/icons/bullet.svg');\n-    margin-top: 10px !important;\n }\n \n-// .pricing ul li::marker{\n+::marker {\n+    margin-top: 10px !important;\n \n-// }\n+}\n \n .pricing__box {\n     background: $c-white;\n     border-radius: 20px;\n"
+                },
+                {
+                    "date": 1677950464224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,11 +60,10 @@\n .pricing ul{\n     list-style-image: url('../assets/icons/bullet.svg');\n }\n \n-::marker {\n-    margin-top: 10px !important;\n-\n+.pricing ul li{\n+    padding-bottom: 2rem\n }\n \n .pricing__box {\n     background: $c-white;\n"
+                },
+                {
+                    "date": 1677950474115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n     list-style-image: url('../assets/icons/bullet.svg');\n }\n \n .pricing ul li{\n-    padding-bottom: 2rem\n+    padding-bottom: 1rem;\n }\n \n .pricing__box {\n     background: $c-white;\n"
+                },
+                {
+                    "date": 1677950484308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n     list-style-image: url('../assets/icons/bullet.svg');\n }\n \n .pricing ul li{\n-    padding-bottom: 1rem;\n+    padding-bottom: .8rem;\n }\n \n .pricing__box {\n     background: $c-white;\n"
+                },
+                {
+                    "date": 1677950797534,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,9 @@\n \n \n .pricing ul{\n     list-style-image: url('../assets/icons/bullet.svg');\n+    padding-left: 20px;\n }\n \n .pricing ul li{\n     padding-bottom: .8rem;\n"
+                },
+                {
+                    "date": 1677950814715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n \n \n .pricing ul{\n     list-style-image: url('../assets/icons/bullet.svg');\n-    padding-left: 20px;\n+    padding-left: 3rem;\n }\n \n .pricing ul li{\n     padding-bottom: .8rem;\n"
+                },
+                {
+                    "date": 1677950850658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,8 @@\n \n \n .pricing ul{\n     list-style-image: url('../assets/icons/bullet.svg');\n-    padding-left: 3rem;\n }\n \n .pricing ul li{\n     padding-bottom: .8rem;\n"
+                },
+                {
+                    "date": 1677950939456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,8 +69,9 @@\n     background: $c-white;\n     border-radius: 20px;\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);\n     padding: 3rem 1.5rem;\n+    height: 100%;\n }\n \n .pricing__name{\n     font-size: 1.5rem;\n"
+                },
+                {
+                    "date": 1677950994560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,8 +72,13 @@\n     padding: 3rem 1.5rem;\n     height: 100%;\n }\n \n+.pricing__box{\n+    background-color: $c-green;\n+    color: $c-white;\n+}\n+\n .pricing__name{\n     font-size: 1.5rem;\n     font-weight: 500;\n }\n"
+                },
+                {
+                    "date": 1677951002455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,9 +72,9 @@\n     padding: 3rem 1.5rem;\n     height: 100%;\n }\n \n-.pricing__box{\n+.pricing__box:hover{\n     background-color: $c-green;\n     color: $c-white;\n }\n \n"
+                },
+                {
+                    "date": 1677951042176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,13 +72,10 @@\n     padding: 3rem 1.5rem;\n     height: 100%;\n }\n \n-.pricing__box:hover{\n-    background-color: $c-green;\n-    color: $c-white;\n-}\n \n+\n .pricing__name{\n     font-size: 1.5rem;\n     font-weight: 500;\n }\n@@ -92,4 +89,12 @@\n     color: $c-gray;\n     opacity: 1;\n }\n \n+.pricing__box:hover{\n+    background-color: $c-green;\n+    color: $c-white;\n+\n+    .pricing__desc{\n+        color: $c-white;\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677951112622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,25 +56,23 @@\n     text-align: center;\n }\n \n \n-.pricing ul{\n-    list-style-image: url('../assets/icons/bullet.svg');\n-}\n-\n-.pricing ul li{\n-    padding-bottom: .8rem;\n-}\n-\n .pricing__box {\n     background: $c-white;\n     border-radius: 20px;\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);\n     padding: 3rem 1.5rem;\n     height: 100%;\n }\n \n+.pricing ul{\n+    list-style-image: url('../assets/icons/bullet.svg');\n+}\n \n+.pricing ul li{\n+    padding-bottom: .8rem;\n+}\n \n .pricing__name{\n     font-size: 1.5rem;\n     font-weight: 500;\n@@ -96,5 +94,9 @@\n \n     .pricing__desc{\n         color: $c-white;\n     }\n+\n+    .pricing ul{\n+        list-style-image: url('../assets/icons/bullet-white.svg');\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677951162216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,7 +96,7 @@\n         color: $c-white;\n     }\n \n     .pricing ul{\n-        list-style-image: url('../assets/icons/bullet-white.svg');\n+        list-style-image: url('../assets/icons/bullet-white.svg') !important;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677951237208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,9 +94,5 @@\n \n     .pricing__desc{\n         color: $c-white;\n     }\n-\n-    .pricing ul{\n-        list-style-image: url('../assets/icons/bullet-white.svg') !important;\n-    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677951268638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,12 +87,16 @@\n     color: $c-gray;\n     opacity: 1;\n }\n \n-.pricing__box:hover{\n+.pricing__box--green{\n     background-color: $c-green;\n     color: $c-white;\n \n     .pricing__desc{\n         color: $c-white;\n     }\n+\n+    .pricing ul{\n+        list-style-image: url('../assets/icons/bullet-white.svg');\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677951434740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,8 +95,8 @@\n     .pricing__desc{\n         color: $c-white;\n     }\n \n-    .pricing ul{\n+    .pricing__more-info ul{\n         list-style-image: url('../assets/icons/bullet-white.svg');\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677951442285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n     padding: 3rem 1.5rem;\n     height: 100%;\n }\n \n-.pricing ul{\n+.pricing__more-info ul{\n     list-style-image: url('../assets/icons/bullet.svg');\n }\n \n .pricing ul li{\n"
+                },
+                {
+                    "date": 1677951711877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,8 +87,14 @@\n     color: $c-gray;\n     opacity: 1;\n }\n \n+.pricing__button{\n+    color: $c-blue;\n+    background-color: transparent;\n+    border-color: $c-blue;\n+}\n+\n .pricing__box--green{\n     background-color: $c-green;\n     color: $c-white;\n \n@@ -98,5 +104,11 @@\n \n     .pricing__more-info ul{\n         list-style-image: url('../assets/icons/bullet-white.svg');\n     }\n+\n+    .pricing__button{\n+        color: $c-white;\n+        background-color: transparent;\n+        border-color: $c-white;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677951740898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,8 +64,12 @@\n     padding: 3rem 1.5rem;\n     height: 100%;\n }\n \n+.pricing__box{\n+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.218);\n+}\n+\n .pricing__more-info ul{\n     list-style-image: url('../assets/icons/bullet.svg');\n }\n \n"
+                },
+                {
+                    "date": 1677951750338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n     padding: 3rem 1.5rem;\n     height: 100%;\n }\n \n-.pricing__box{\n+.pricing__box:hover{\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.218);\n }\n \n .pricing__more-info ul{\n"
+                },
+                {
+                    "date": 1677951763094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,8 +62,9 @@\n     border-radius: 20px;\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);\n     padding: 3rem 1.5rem;\n     height: 100%;\n+    transition: all .5s;\n }\n \n .pricing__box:hover{\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.218);\n"
+                },
+                {
+                    "date": 1677951989901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -115,5 +115,12 @@\n         color: $c-white;\n         background-color: transparent;\n         border-color: $c-white;\n     }\n+}\n+\n+\n+\n+.cta--2{\n+    margin: 0;\n+    background-image: url('..//assets/images/map.png');\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677952011592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,5 +122,6 @@\n \n .cta--2{\n     margin: 0;\n     background-image: url('..//assets/images/map.png');\n+    background-color: $c-blue;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677952160836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,5 +123,9 @@\n .cta--2{\n     margin: 0;\n     background-image: url('..//assets/images/map.png');\n     background-color: $c-blue;\n+}\n+\n+.footer{\n+    background-color: $dark-blue;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1677952174801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -126,6 +126,6 @@\n     background-color: $c-blue;\n }\n \n .footer{\n-    background-color: $dark-blue;\n+    background-color: $c-darkblue;\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1677938893885,

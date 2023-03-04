@@ -5,11 +5,21 @@ $f-poppins: 'Poppins', sans-serif;
 $c-white: #FFF;
 $c-green: #05AB6E;
 $c-blue: #0779E4;
+$c-lightblue: #3693FF;
+$c-darkblue: #011222;
 $c-orange: #FF8554;
-$c-gray: #EFF0F6;
+$c-lightgray: #EFF0F6;
+$c-gray:#AAAAAA;
+
 
 body{
     font-family: $f-poppins;
+}
+
+p{
+    font-size: 0.875rem;
+    line-height: 30px;
+    opacity: .6;
 }
 
 .button{

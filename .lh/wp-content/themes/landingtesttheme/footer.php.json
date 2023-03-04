@@ -1,0 +1,26 @@
+{
+    "sourceFile": "wp-content/themes/landingtesttheme/footer.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1677952108926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1677952291937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,18 @@\n <!-- FOOTER -->\n <footer>\n     <div class=\"container-fluid footer\">\n         <div class=\"container\">\n-            <div class=\"row\">\n+            <div class=\"row py-5\">\n+                <div class=\"col-12 col-md-6 col-lg-3\">\n+                    <div>\n+                        <img src=\"<?php echo esc_url( wp_get_attachment_url( get_theme_mod( 'custom_logo' ) ) ); ?>\" alt=\"Logo\">\n+                    </div>\n \n+                </div>\n+                <div class=\"col-12 col-md-6 col-lg-3\"></div>\n+                <div class=\"col-12 col-md-6 col-lg-3\"></div>\n+                <div class=\"col-12 col-md-6 col-lg-3\"></div>\n             </div>\n         </div>\n     </div>\n </footer>\n"
+                },
+                {
+                    "date": 1677952307533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <!-- FOOTER -->\n <footer>\n     <div class=\"container-fluid footer\">\n-        <div class=\"container\">\n+        <div class=\"container py-5\">\n             <div class=\"row py-5\">\n                 <div class=\"col-12 col-md-6 col-lg-3\">\n                     <div>\n                         <img src=\"<?php echo esc_url( wp_get_attachment_url( get_theme_mod( 'custom_logo' ) ) ); ?>\" alt=\"Logo\">\n"
+                }
+            ],
+            "date": 1677952108926,
+            "name": "Commit-0",
+            "content": "<!-- FOOTER -->\n<footer>\n    <div class=\"container-fluid footer\">\n        <div class=\"container\">\n            <div class=\"row\">\n\n            </div>\n        </div>\n    </div>\n</footer>\n<?php wp_footer(); ?>\n\n</body>\n\n</html>"
+        }
+    ]
+}

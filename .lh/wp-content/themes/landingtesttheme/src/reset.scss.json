@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 41,
+            "activePatchIndex": 50,
             "patches": [
                 {
                     "date": 1677939980702,
@@ -172,6 +172,42 @@
                 {
                     "date": 1677946428131,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,13 @@\n     font-size: 2.5rem;\n     font-weight: 600;\n }\n \n+.header-h3{\n+    font-size: 1.25rem;\n+    font-weight: 500;\n+}\n+\n .header-h4{\n     color: $c-green;\n     font-size: 1rem;\n     font-weight: 500;\n"
+                },
+                {
+                    "date": 1677946623980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,12 @@\n body{\n     font-family: $f-poppins;\n }\n \n+p{\n+    font-size: 0.875rem;\n+}\n+\n .button{\n     color: $c-white;\n     background-color: transparent;\n     border-color: $c-white;\n"
+                },
+                {
+                    "date": 1677946646468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n }\n \n p{\n     font-size: 0.875rem;\n+    line-height: 30px;\n }\n \n .button{\n     color: $c-white;\n"
+                },
+                {
+                    "date": 1677946664976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n \n p{\n     font-size: 0.875rem;\n     line-height: 30px;\n+    opacity: .6;\n }\n \n .button{\n     color: $c-white;\n"
+                },
+                {
+                    "date": 1677949723115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,10 @@\n $c-white: #FFF;\n $c-green: #05AB6E;\n $c-blue: #0779E4;\n $c-orange: #FF8554;\n-$c-gray: #EFF0F6;\n+$c-lightgray: #EFF0F6;\n+$c-gray:#AAAAAA;\n \n body{\n     font-family: $f-poppins;\n }\n"
+                },
+                {
+                    "date": 1677950679980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,8 +39,14 @@\n     background-color: $c-orange;\n     border-color: $c-orange;\n }\n \n+.button__orange{\n+    color: $c-blue;\n+    background-color: transparent;\n+    border-color: $c-blue;\n+}\n+\n .header-h1{\n     font-size: 3rem;\n     font-weight: 700;\n }\n"
+                },
+                {
+                    "date": 1677950690071,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n     background-color: $c-orange;\n     border-color: $c-orange;\n }\n \n-.button__orange{\n+.button__blue{\n     color: $c-blue;\n     background-color: transparent;\n     border-color: $c-blue;\n }\n"
+                },
+                {
+                    "date": 1677950741444,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,12 +4,14 @@\n // --- COLORS ---\n $c-white: #FFF;\n $c-green: #05AB6E;\n $c-blue: #0779E4;\n+$c-lightblue: #3693FF;\n $c-orange: #FF8554;\n $c-lightgray: #EFF0F6;\n $c-gray:#AAAAAA;\n \n+\n body{\n     font-family: $f-poppins;\n }\n \n"
+                },
+                {
+                    "date": 1677951661527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,14 +41,8 @@\n     background-color: $c-orange;\n     border-color: $c-orange;\n }\n \n-.button__blue{\n-    color: $c-blue;\n-    background-color: transparent;\n-    border-color: $c-blue;\n-}\n-\n .header-h1{\n     font-size: 3rem;\n     font-weight: 700;\n }\n"
+                },
+                {
+                    "date": 1677952151869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n $c-white: #FFF;\n $c-green: #05AB6E;\n $c-blue: #0779E4;\n $c-lightblue: #3693FF;\n+$c-darkblue: #011222;\n $c-orange: #FF8554;\n $c-lightgray: #EFF0F6;\n $c-gray:#AAAAAA;\n \n"
                 }
             ],
             "date": 1677939980702,

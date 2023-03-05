@@ -50,8 +50,9 @@ add_action('after_setup_theme', 'config_custom_theme');
 // register menu
 register_nav_menus([
 	'header-menu' => __('Menu główne'),
-	'footer-menu' => __('Menu w stopce'),
-	'offer-menu' => __('Menu z ofertą'),
+	'footer-features' => __('Menu Features'),
+	'footer-services' => __('Menu Services'),
+	'footer-support' => __('Menu Support'),
 ]);
 
 

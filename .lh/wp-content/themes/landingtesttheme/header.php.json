@@ -1,0 +1,30 @@
+{
+    "sourceFile": "wp-content/themes/landingtesttheme/header.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1678000832801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1678001310342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,10 @@\n     <!-- NAVIGATION -->\n     <nav class=\"navbar navbar-expand-lg justify-content-start p-0 menu\">\n         <div class=\"container-fluid py-2 px-xl-5\">\n             <div>\n-                <a class=\"navbar-brand menu__logo-link\" href=\"<?php echo get_home_url(); ?>\">\n-                    <img class=\"pe-3 menu__logo grow-up\" src=\"<?php echo esc_url(wp_get_attachment_url(get_theme_mod('custom_logo'))); ?>\" alt=\"Amber Glass logo\">\n+                <a class=\"navbar-brand\" href=\"<?php echo get_home_url(); ?>\">\n+                    <img src=\"<?php echo esc_url(wp_get_attachment_url(get_theme_mod('custom_logo'))); ?>\" alt=\"Logo\">\n                 </a>\n             </div>\n             <button class=\"navbar-toggler menu__button\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n                 <img class=\"menu__mobile-btn-icon\" src=\"<?php echo get_template_directory_uri() . \"/assets/icons/btn-mobilemenu.svg\"; ?>\" alt=\"Toogle icon\">\n"
+                },
+                {
+                    "date": 1678001357217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n             </div>\n             <button class=\"navbar-toggler menu__button\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n                 <img class=\"menu__mobile-btn-icon\" src=\"<?php echo get_template_directory_uri() . \"/assets/icons/btn-mobilemenu.svg\"; ?>\" alt=\"Toogle icon\">\n             </button>\n-            <div class=\"collapse navbar-collapse menu__links-container\" id=\"navbarSupportedContent\">\n+            <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n                 <?php\n                 wp_nav_menu(array(\n                     'theme_location' => 'header-menu',\n                     'container' => true,\n"
+                },
+                {
+                    "date": 1678017594011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \n \n <body>\n     <!-- NAVIGATION -->\n-    <nav class=\"navbar navbar-expand-lg justify-content-start p-0 menu\">\n+    <nav class=\"navbar navbar-expand-lg justify-content-start p-0 pt-4 menu\">\n         <div class=\"container-fluid py-2 px-xl-5\">\n             <div>\n                 <a class=\"navbar-brand\" href=\"<?php echo get_home_url(); ?>\">\n                     <img src=\"<?php echo esc_url(wp_get_attachment_url(get_theme_mod('custom_logo'))); ?>\" alt=\"Logo\">\n"
+                }
+            ],
+            "date": 1678000832801,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"pl\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Landing Test</title>\n    <?php wp_head(); ?>\n</head>\n\n\n<body>\n    <!-- NAVIGATION -->\n    <nav class=\"navbar navbar-expand-lg justify-content-start p-0 menu\">\n        <div class=\"container-fluid py-2 px-xl-5\">\n            <div>\n                <a class=\"navbar-brand menu__logo-link\" href=\"<?php echo get_home_url(); ?>\">\n                    <img class=\"pe-3 menu__logo grow-up\" src=\"<?php echo esc_url(wp_get_attachment_url(get_theme_mod('custom_logo'))); ?>\" alt=\"Amber Glass logo\">\n                </a>\n            </div>\n            <button class=\"navbar-toggler menu__button\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n                <img class=\"menu__mobile-btn-icon\" src=\"<?php echo get_template_directory_uri() . \"/assets/icons/btn-mobilemenu.svg\"; ?>\" alt=\"Toogle icon\">\n            </button>\n            <div class=\"collapse navbar-collapse menu__links-container\" id=\"navbarSupportedContent\">\n                <?php\n                wp_nav_menu(array(\n                    'theme_location' => 'header-menu',\n                    'container' => true,\n                    'menu_class' => '',\n                    'fallback_cb' => '__return_false',\n                    'items_wrap' => '<ul id=\"%1$s\" class=\"navbar-nav me-auto pe-xl-5 pe-3 w-100 justify-content-end %2$s\">%3$s</ul>',\n                    'depth' => 1,\n                    'walker' => new bootstrap_5_wp_nav_menu_walker()\n                ));\n                ?>\n            </div>\n        </div>\n    </nav>"
+        }
+    ]
+}

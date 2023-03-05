@@ -22,6 +22,10 @@ p{
     opacity: .6;
 }
 
+a{
+    font-size: 0.875rem;
+}
+
 .button{
     color: $c-white;
     background-color: transparent;
@@ -29,8 +33,16 @@ p{
     border-width: 2px;
     border-style: solid;
     border-radius: 100px;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     text-decoration: none;
+    transition: all .3s;
+}
+
+.button:hover{
+    color: $c-white;
+    background-color: $c-green;
+    border-color: $c-green;
+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.2);
 }
 
 .button__highlight{
@@ -46,6 +58,12 @@ p{
 .header-h1{
     font-size: 3rem;
     font-weight: 700;
+}
+
+@media only screen and (max-width: 767px) {
+    .header-h1{
+        font-size: 2.5rem;
+    }
 }
 
 .header-h2{

@@ -2,9 +2,75 @@
 @import "~bootstrap/scss/bootstrap";
 @import "reset";
 
+.menu{
+    position: relative;
+    display: flex;
+    align-items: start;
+    height: 100px;
+    z-index: 1000;
+}
+
+.menu .nav-link {
+    color: $c-white;
+    font-size: 0.875rem;
+}
+
+.menu .menu-item{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.menu .menu-item:last-child .nav-link{
+    color: $c-white;
+    background-color: $c-green;
+    border: 2px solid $c-green;
+    border-radius: 100px;
+    padding: 1rem 2rem;
+    margin-left: 6rem;
+    transition: all .3s;
+}
+
+.menu .menu-item:last-child .nav-link:hover{
+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.2);
+}
+
+
+@media only screen and (max-width: 767px) {
+    .navbar-collapse{
+        background-color: $c-green;
+        margin-top: 1rem;
+    }
+
+    .navbar-nav{
+        padding-top: 1rem;
+        padding-bottom: .8rem;
+    }
+
+    .menu .menu-item:last-child .nav-link{
+        color: $c-white;
+        background-color: $c-green;
+        border: none;
+        border-radius: none;
+        padding-top: 0.5rem;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+    }
+}
+
 .hero {
     height: 80vh;
     background-size: cover;
+    margin-top: -100px;
+}
+
+.hero__video{
+    position: absolute;
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
 }
 
 .hero__content {
@@ -26,10 +92,16 @@
     position: relative;
     z-index: 100;
     margin-top: -100px;
-    height: 350px;
+    min-height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .cta {
+        margin-top: -50px;
+    }
 }
 
 .cta__form {
@@ -45,6 +117,23 @@
 
 .cta__search {
     margin-left: -100px;
+}
+
+@media only screen and (max-width: 767px) {
+    .cta__form {
+        display: block;
+    }
+
+    .cta__form input {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+
+    .cta__search {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .services__box {
@@ -128,4 +217,21 @@
 
 .footer{
     background-color: $c-darkblue;
+}
+
+.footer p{
+    opacity: 1;
+}
+
+.footer a{
+    color: $c-white;
+    opacity: 0.6;
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: all .2s;
+}
+
+.footer a:hover{
+    color: $c-white;
+    opacity: 1;
 }

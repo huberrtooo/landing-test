@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 87,
+            "activePatchIndex": 148,
             "patches": [
                 {
                     "date": 1677938893885,
@@ -356,6 +356,250 @@
                 {
                     "date": 1677952174801,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -126,6 +126,6 @@\n     background-color: $c-blue;\n }\n \n .footer{\n-    background-color: $dark-blue;\n+    background-color: $c-darkblue;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1678000260809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -127,5 +127,14 @@\n }\n \n .footer{\n     background-color: $c-darkblue;\n+}\n+\n+.footer a{\n+    color: $c-white;\n+    opacity: 0.6;\n+}\n+\n+.footer a:hover{\n+    opacity: 1;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1678000333570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,8 +132,9 @@\n \n .footer a{\n     color: $c-white;\n     opacity: 0.6;\n+    text-decoration: none;\n }\n \n .footer a:hover{\n     opacity: 1;\n"
+                },
+                {
+                    "date": 1678000452127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -133,8 +133,9 @@\n .footer a{\n     color: $c-white;\n     opacity: 0.6;\n     text-decoration: none;\n+    font-size: 0.875rem;\n }\n \n .footer a:hover{\n     opacity: 1;\n"
+                },
+                {
+                    "date": 1678001104018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,8 +129,12 @@\n .footer{\n     background-color: $c-darkblue;\n }\n \n+.footer p{\n+    opacity: 1;\n+}\n+\n .footer a{\n     color: $c-white;\n     opacity: 0.6;\n     text-decoration: none;\n"
+                },
+                {
+                    "date": 1678001142996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -141,6 +141,7 @@\n     font-size: 0.875rem;\n }\n \n .footer a:hover{\n+    color: $c-white;\n     opacity: 1;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1678001162630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,8 +138,9 @@\n     color: $c-white;\n     opacity: 0.6;\n     text-decoration: none;\n     font-size: 0.875rem;\n+    transition: all .4s;\n }\n \n .footer a:hover{\n     color: $c-white;\n"
+                },
+                {
+                    "date": 1678001172698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,9 +138,9 @@\n     color: $c-white;\n     opacity: 0.6;\n     text-decoration: none;\n     font-size: 0.875rem;\n-    transition: all .4s;\n+    transition: all .2s;\n }\n \n .footer a:hover{\n     color: $c-white;\n"
+                },
+                {
+                    "date": 1678001230171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,12 @@\n @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');\n @import \"~bootstrap/scss/bootstrap\";\n @import \"reset\";\n \n+.menu{\n+    height: 100px;\n+}\n+\n .hero {\n     height: 80vh;\n     background-size: cover;\n }\n"
+                },
+                {
+                    "date": 1678001245727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n \n .hero {\n     height: 80vh;\n     background-size: cover;\n+    margin-top: -100px;\n }\n \n .hero__content {\n     color: $c-white;\n"
+                },
+                {
+                    "date": 1678001389993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,13 @@\n .menu{\n     height: 100px;\n }\n \n+.menu .nav-link {\n+    color: $c-white;\n+\n+}\n+\n .hero {\n     height: 80vh;\n     background-size: cover;\n     margin-top: -100px;\n"
+                },
+                {
+                    "date": 1678001489313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n }\n \n .menu .nav-link {\n     color: $c-white;\n+    font-size: 0.875rem;\n \n }\n \n .hero {\n"
+                },
+                {
+                    "date": 1678001511281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n \n .menu .nav-link {\n     color: $c-white;\n     font-size: 0.875rem;\n+    padding-left: 2rem;\n \n }\n \n .hero {\n"
+                },
+                {
+                    "date": 1678001548586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,14 @@\n \n .menu .nav-link {\n     color: $c-white;\n     font-size: 0.875rem;\n-    padding-left: 2rem;\n+}\n \n+.menu .menu-item{\n+    padding-left: 1rem;\n+    padding-right: 1rem;\n+\n }\n \n .hero {\n     height: 80vh;\n"
+                },
+                {
+                    "date": 1678001580991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,12 @@\n \n .menu .menu-item{\n     padding-left: 1rem;\n     padding-right: 1rem;\n+}\n \n+.menu .nav-link:last-child{\n+    background-color: blue;\n }\n \n .hero {\n     height: 80vh;\n"
+                },
+                {
+                    "date": 1678001606919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     padding-left: 1rem;\n     padding-right: 1rem;\n }\n \n-.menu .nav-link:last-child{\n+.menu .menu-item:last-child .nav-link{\n     background-color: blue;\n }\n \n .hero {\n"
+                },
+                {
+                    "date": 1678001683365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,13 @@\n     padding-right: 1rem;\n }\n \n .menu .menu-item:last-child .nav-link{\n-    background-color: blue;\n+    color: $c-white;\n+    background-color: $c-green;\n+    border: 2px solid $c-green;\n+    border-radius: 100px;\n+    padding: 1rem 2rem;\n }\n \n .hero {\n     height: 80vh;\n"
+                },
+                {
+                    "date": 1678001707752,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n     background-color: $c-green;\n     border: 2px solid $c-green;\n     border-radius: 100px;\n     padding: 1rem 2rem;\n+    margin-left: 3rem;\n }\n \n .hero {\n     height: 80vh;\n"
+                },
+                {
+                    "date": 1678001714937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     background-color: $c-green;\n     border: 2px solid $c-green;\n     border-radius: 100px;\n     padding: 1rem 2rem;\n-    margin-left: 3rem;\n+    margin-left: 5rem;\n }\n \n .hero {\n     height: 80vh;\n"
+                },
+                {
+                    "date": 1678001723199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n     background-color: $c-green;\n     border: 2px solid $c-green;\n     border-radius: 100px;\n     padding: 1rem 2rem;\n-    margin-left: 5rem;\n+    margin-left: 6rem;\n }\n \n .hero {\n     height: 80vh;\n"
+                },
+                {
+                    "date": 1678001759861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,10 @@\n     font-size: 0.875rem;\n }\n \n .menu .menu-item{\n+    display: flex;\n+    align-items: center;\n     padding-left: 1rem;\n     padding-right: 1rem;\n }\n \n"
+                },
+                {
+                    "date": 1678002071901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,16 @@\n     background-size: cover;\n     margin-top: -100px;\n }\n \n+.hero__video{\n+    position: fixed;\n+    right: 0;\n+    bottom: 0;\n+    min-width: 100%;\n+    height: 80vh;\n+}\n+\n .hero__content {\n     color: $c-white;\n     display: flex;\n     flex-direction: column;\n"
+                },
+                {
+                    "date": 1678002085695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,8 @@\n .hero__video{\n     position: fixed;\n     right: 0;\n     bottom: 0;\n-    min-width: 100%;\n     height: 80vh;\n }\n \n .hero__content {\n"
+                },
+                {
+                    "date": 1678002096133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     margin-top: -100px;\n }\n \n .hero__video{\n-    position: fixed;\n+    position: absolute;\n     right: 0;\n     bottom: 0;\n     height: 80vh;\n }\n"
+                },
+                {
+                    "date": 1678002220082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,12 +33,10 @@\n     margin-top: -100px;\n }\n \n .hero__video{\n-    position: absolute;\n-    right: 0;\n-    bottom: 0;\n     height: 80vh;\n+    width: 100%;\n }\n \n .hero__content {\n     color: $c-white;\n"
+                },
+                {
+                    "date": 1678002341293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,9 @@\n \n .hero__video{\n     height: 80vh;\n     width: 100%;\n+    object-fit: cover;\n }\n \n .hero__content {\n     color: $c-white;\n"
+                },
+                {
+                    "date": 1678002418225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,9 @@\n     margin-top: -100px;\n }\n \n .hero__video{\n+    position: fixed;\n     height: 80vh;\n     width: 100%;\n     object-fit: cover;\n }\n"
+                },
+                {
+                    "date": 1678002451835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n     margin-top: -100px;\n }\n \n .hero__video{\n-    position: fixed;\n+    position: absolute;\n     height: 80vh;\n     width: 100%;\n     object-fit: cover;\n }\n"
+                },
+                {
+                    "date": 1678002521684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,11 @@\n @import \"~bootstrap/scss/bootstrap\";\n @import \"reset\";\n \n .menu{\n+    position: relative;\n     height: 100px;\n+    z-index: 1000;\n }\n \n .menu .nav-link {\n     color: $c-white;\n"
+                },
+                {
+                    "date": 1678002715418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n .hero {\n     height: 80vh;\n     background-size: cover;\n     margin-top: -100px;\n+    margin-bottom: 100px;\n }\n \n .hero__video{\n     position: absolute;\n"
+                },
+                {
+                    "date": 1678002725256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n .hero {\n     height: 80vh;\n     background-size: cover;\n     margin-top: -100px;\n-    margin-bottom: 100px;\n+    margin-bottom: -100px;\n }\n \n .hero__video{\n     position: absolute;\n"
+                },
+                {
+                    "date": 1678002877935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,8 @@\n .hero {\n     height: 80vh;\n     background-size: cover;\n     margin-top: -100px;\n-    margin-bottom: -100px;\n }\n \n .hero__video{\n     position: absolute;\n"
+                },
+                {
+                    "date": 1678003056607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -133,8 +133,12 @@\n     background-color: transparent;\n     border-color: $c-blue;\n }\n \n+.button:hover{\n+    color: $c-blue;\n+}\n+\n .pricing__box--green{\n     background-color: $c-green;\n     color: $c-white;\n \n"
+                },
+                {
+                    "date": 1678003077670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -133,9 +133,9 @@\n     background-color: transparent;\n     border-color: $c-blue;\n }\n \n-.button:hover{\n+.pricing__button:hover{\n     color: $c-blue;\n }\n \n .pricing__box--green{\n"
+                },
+                {
+                    "date": 1678003186219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -133,12 +133,8 @@\n     background-color: transparent;\n     border-color: $c-blue;\n }\n \n-.pricing__button:hover{\n-    color: $c-blue;\n-}\n-\n .pricing__box--green{\n     background-color: $c-green;\n     color: $c-white;\n \n"
+                },
+                {
+                    "date": 1678003225779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,8 +28,12 @@\n     padding: 1rem 2rem;\n     margin-left: 6rem;\n }\n \n+.menu .menu-item:last-child .nav-link:hover{\n+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.2);\n+}\n+\n .hero {\n     height: 80vh;\n     background-size: cover;\n     margin-top: -100px;\n"
+                },
+                {
+                    "date": 1678003239255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n     border: 2px solid $c-green;\n     border-radius: 100px;\n     padding: 1rem 2rem;\n     margin-left: 6rem;\n+    v\n }\n \n .menu .menu-item:last-child .nav-link:hover{\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.2);\n"
+                },
+                {
+                    "date": 1678003500571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n     border: 2px solid $c-green;\n     border-radius: 100px;\n     padding: 1rem 2rem;\n     margin-left: 6rem;\n-    v\n+    transition: all .3s;\n }\n \n .menu .menu-item:last-child .nav-link:hover{\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.2);\n@@ -39,8 +39,14 @@\n     background-size: cover;\n     margin-top: -100px;\n }\n \n+@media only screen and (max-width: 600px) {\n+    .hero {\n+        margin-top: 767px;\n+    }\n+}\n+\n .hero__video{\n     position: absolute;\n     height: 80vh;\n     width: 100%;\n"
+                },
+                {
+                    "date": 1678003541418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,14 +39,8 @@\n     background-size: cover;\n     margin-top: -100px;\n }\n \n-@media only screen and (max-width: 600px) {\n-    .hero {\n-        margin-top: 767px;\n-    }\n-}\n-\n .hero__video{\n     position: absolute;\n     height: 80vh;\n     width: 100%;\n@@ -77,8 +71,14 @@\n     flex-direction: column;\n     justify-content: center;\n }\n \n+@media only screen and (max-width: 767px) {\n+    .cta {\n+        margin-top: 0;\n+    }\n+}\n+\n .cta__form {\n     display: flex;\n     justify-content: center;\n }\n"
+                },
+                {
+                    "date": 1678003552471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,9 +73,9 @@\n }\n \n @media only screen and (max-width: 767px) {\n     .cta {\n-        margin-top: 0;\n+        margin-top: -50px;\n     }\n }\n \n .cta__form {\n"
+                },
+                {
+                    "date": 1678003801362,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,194 @@\n+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');\n+@import \"~bootstrap/scss/bootstrap\";\n+@import \"reset\";\n+\n+.menu{\n+    position: relative;\n+    height: 100px;\n+    z-index: 1000;\n+}\n+\n+.menu .nav-link {\n+    color: $c-white;\n+    font-size: 0.875rem;\n+}\n+\n+.menu .menu-item{\n+    display: flex;\n+    align-items: center;\n+    padding-left: 1rem;\n+    padding-right: 1rem;\n+}\n+\n+.menu .menu-item:last-child .nav-link{\n+    color: $c-white;\n+    background-color: $c-green;\n+    border: 2px solid $c-green;\n+    border-radius: 100px;\n+    padding: 1rem 2rem;\n+    margin-left: 6rem;\n+    transition: all .3s;\n+}\n+\n+.menu .menu-item:last-child .nav-link:hover{\n+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.2);\n+}\n+\n+.hero {\n+    height: 80vh;\n+    background-size: cover;\n+    margin-top: -100px;\n+}\n+\n+.hero__video{\n+    position: absolute;\n+    height: 80vh;\n+    width: 100%;\n+    object-fit: cover;\n+}\n+\n+.hero__content {\n+    color: $c-white;\n+    display: flex;\n+    flex-direction: column;\n+    justify-content: center;\n+    height: 80vh;\n+}\n+\n+.cta {\n+    background-image: url(../assets/images/lines.png);\n+    background-repeat: no-repeat;\n+    background-position: center;\n+    color: $c-white;\n+    background-color: $c-green;\n+    border-radius: 20px;\n+    text-align: center;\n+    position: relative;\n+    z-index: 100;\n+    margin-top: -100px;\n+    min-height: 350px;\n+    display: flex;\n+    flex-direction: column;\n+    justify-content: center;\n+}\n+\n+@media only screen and (max-width: 767px) {\n+    .cta {\n+        margin-top: -50px;\n+    }\n+}\n+\n+.cta__form {\n+    display: flex;\n+    justify-content: center;\n+}\n+\n+.cta__form input {\n+    width: 70%;\n+    padding: 1rem 2rem;\n+    border-radius: 100px;\n+}\n+\n+.cta__search {\n+    margin-left: -100px;\n+}\n+\n+.services__box {\n+    background-color: $c-lightgray;\n+    border-radius: 20px;\n+    padding: 1rem;\n+    padding-top: 2rem;\n+    height: 100%;\n+    text-align: center;\n+}\n+\n+\n+.pricing__box {\n+    background: $c-white;\n+    border-radius: 20px;\n+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);\n+    padding: 3rem 1.5rem;\n+    height: 100%;\n+    transition: all .5s;\n+}\n+\n+.pricing__box:hover{\n+    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.218);\n+}\n+\n+.pricing__more-info ul{\n+    list-style-image: url('../assets/icons/bullet.svg');\n+}\n+\n+.pricing ul li{\n+    padding-bottom: .8rem;\n+}\n+\n+.pricing__name{\n+    font-size: 1.5rem;\n+    font-weight: 500;\n+}\n+\n+.pricing__price{\n+    font-size: 2rem;\n+    font-weight: 500;\n+}\n+\n+.pricing__desc{\n+    color: $c-gray;\n+    opacity: 1;\n+}\n+\n+.pricing__button{\n+    color: $c-blue;\n+    background-color: transparent;\n+    border-color: $c-blue;\n+}\n+\n+.pricing__box--green{\n+    background-color: $c-green;\n+    color: $c-white;\n+\n+    .pricing__desc{\n+        color: $c-white;\n+    }\n+\n+    .pricing__more-info ul{\n+        list-style-image: url('../assets/icons/bullet-white.svg');\n+    }\n+\n+    .pricing__button{\n+        color: $c-white;\n+        background-color: transparent;\n+        border-color: $c-white;\n+    }\n+}\n+\n+\n+\n+.cta--2{\n+    margin: 0;\n+    background-image: url('..//assets/images/map.png');\n+    background-color: $c-blue;\n+}\n+\n+.footer{\n+    background-color: $c-darkblue;\n+}\n+\n+.footer p{\n+    opacity: 1;\n+}\n+\n+.footer a{\n+    color: $c-white;\n+    opacity: 0.6;\n+    text-decoration: none;\n+    font-size: 0.875rem;\n+    transition: all .2s;\n+}\n+\n+.footer a:hover{\n+    color: $c-white;\n+    opacity: 1;\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1678004071589,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,202 +92,25 @@\n .cta__search {\n     margin-left: -100px;\n }\n \n-.services__box {\n-    background-color: $c-lightgray;\n-    border-radius: 20px;\n-    padding: 1rem;\n-    padding-top: 2rem;\n-    height: 100%;\n-    text-align: center;\n-}\n-\n-\n-.pricing__box {\n-    background: $c-white;\n-    border-radius: 20px;\n-    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.06);\n-    padding: 3rem 1.5rem;\n-    height: 100%;\n-    transition: all .5s;\n-}\n-\n-.pricing__box:hover{\n-    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.218);\n-}\n-\n-.pricing__more-info ul{\n-    list-style-image: url('../assets/icons/bullet.svg');\n-}\n-\n-.pricing ul li{\n-    padding-bottom: .8rem;\n-}\n-\n-.pricing__name{\n-    font-size: 1.5rem;\n-    font-weight: 500;\n-}\n-\n-.pricing__price{\n-    font-size: 2rem;\n-    font-weight: 500;\n-}\n-\n-.pricing__desc{\n-    color: $c-gray;\n-    opacity: 1;\n-}\n-\n-.pricing__button{\n-    color: $c-blue;\n-    background-color: transparent;\n-    border-color: $c-blue;\n-}\n-\n-.pricing__box--green{\n-    background-color: $c-green;\n-    color: $c-white;\n-\n-    .pricing__desc{\n-        color: $c-white;\n+@media only screen and (max-width: 767px) {\n+    .cta__form {\n+        display: block;\n+        justify-content: center;\n     }\n \n-    .pricing__more-info ul{\n-        list-style-image: url('../assets/icons/bullet-white.svg');\n+    .cta__form input {\n+        width: 70%;\n+        padding: 1rem 2rem;\n+        border-radius: 100px;\n     }\n \n-    .pricing__button{\n-        color: $c-white;\n-        background-color: transparent;\n-        border-color: $c-white;\n+    .cta__search {\n+        margin-left: -100px;\n     }\n }\n \n-\n-\n-.cta--2{\n-    margin: 0;\n-    background-image: url('..//assets/images/map.png');\n-    background-color: $c-blue;\n-}\n-\n-.footer{\n-    background-color: $c-darkblue;\n-}\n-\n-.footer p{\n-    opacity: 1;\n-}\n-\n-.footer a{\n-    color: $c-white;\n-    opacity: 0.6;\n-    text-decoration: none;\n-    font-size: 0.875rem;\n-    transition: all .2s;\n-}\n-\n-.footer a:hover{\n-    color: $c-white;\n-    opacity: 1;\n-}\n-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');\n-@import \"~bootstrap/scss/bootstrap\";\n-@import \"reset\";\n-\n-.menu{\n-    position: relative;\n-    height: 100px;\n-    z-index: 1000;\n-}\n-\n-.menu .nav-link {\n-    color: $c-white;\n-    font-size: 0.875rem;\n-}\n-\n-.menu .menu-item{\n-    display: flex;\n-    align-items: center;\n-    padding-left: 1rem;\n-    padding-right: 1rem;\n-}\n-\n-.menu .menu-item:last-child .nav-link{\n-    color: $c-white;\n-    background-color: $c-green;\n-    border: 2px solid $c-green;\n-    border-radius: 100px;\n-    padding: 1rem 2rem;\n-    margin-left: 6rem;\n-    transition: all .3s;\n-}\n-\n-.menu .menu-item:last-child .nav-link:hover{\n-    box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.2);\n-}\n-\n-.hero {\n-    height: 80vh;\n-    background-size: cover;\n-    margin-top: -100px;\n-}\n-\n-.hero__video{\n-    position: absolute;\n-    height: 80vh;\n-    width: 100%;\n-    object-fit: cover;\n-}\n-\n-.hero__content {\n-    color: $c-white;\n-    display: flex;\n-    flex-direction: column;\n-    justify-content: center;\n-    height: 80vh;\n-}\n-\n-.cta {\n-    background-image: url(../assets/images/lines.png);\n-    background-repeat: no-repeat;\n-    background-position: center;\n-    color: $c-white;\n-    background-color: $c-green;\n-    border-radius: 20px;\n-    text-align: center;\n-    position: relative;\n-    z-index: 100;\n-    margin-top: -100px;\n-    height: 350px;\n-    display: flex;\n-    flex-direction: column;\n-    justify-content: center;\n-}\n-\n-@media only screen and (max-width: 767px) {\n-    .cta {\n-        margin-top: -50px;\n-    }\n-}\n-\n-.cta__form {\n-    display: flex;\n-    justify-content: center;\n-}\n-\n-.cta__form input {\n-    width: 70%;\n-    padding: 1rem 2rem;\n-    border-radius: 100px;\n-}\n-\n-.cta__search {\n-    margin-left: -100px;\n-}\n-\n .services__box {\n     background-color: $c-lightgray;\n     border-radius: 20px;\n     padding: 1rem;\n"
+                },
+                {
+                    "date": 1678004119533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,13 +95,12 @@\n \n @media only screen and (max-width: 767px) {\n     .cta__form {\n         display: block;\n-        justify-content: center;\n     }\n \n     .cta__form input {\n-        width: 70%;\n+        width: 100%;\n         padding: 1rem 2rem;\n         border-radius: 100px;\n     }\n \n"
+                },
+                {
+                    "date": 1678004139129,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,13 +100,12 @@\n \n     .cta__form input {\n         width: 100%;\n         padding: 1rem 2rem;\n-        border-radius: 100px;\n     }\n \n     .cta__search {\n-        margin-left: -100px;\n+        text-align: center;\n     }\n }\n \n .services__box {\n"
+                },
+                {
+                    "date": 1678004160568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,9 +103,10 @@\n         padding: 1rem 2rem;\n     }\n \n     .cta__search {\n-        text-align: center;\n+        margin-left: auto;\n+        margin-right: auto;\n     }\n }\n \n .services__box {\n"
+                },
+                {
+                    "date": 1678004174384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,8 +103,9 @@\n         padding: 1rem 2rem;\n     }\n \n     .cta__search {\n+        margin-top: 10px;\n         margin-left: auto;\n         margin-right: auto;\n     }\n }\n"
+                },
+                {
+                    "date": 1678017238152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,8 +33,12 @@\n .menu .menu-item:last-child .nav-link:hover{\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.2);\n }\n \n+.navbar-collapse .show{\n+    background-color: $c-green;\n+}\n+\n .hero {\n     height: 80vh;\n     background-size: cover;\n     margin-top: -100px;\n"
+                },
+                {
+                    "date": 1678017259694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n .menu .menu-item:last-child .nav-link:hover{\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.2);\n }\n \n-.navbar-collapse .show{\n+.navbar-collapse{\n     background-color: $c-green;\n }\n \n .hero {\n"
+                },
+                {
+                    "date": 1678017317324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,10 +33,11 @@\n .menu .menu-item:last-child .nav-link:hover{\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.2);\n }\n \n-.navbar-collapse{\n+.navbar-collapse .show{\n     background-color: $c-green;\n+\n }\n \n .hero {\n     height: 80vh;\n"
+                },
+                {
+                    "date": 1678017373973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,9 @@\n .menu .menu-item:last-child .nav-link:hover{\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.2);\n }\n \n-.navbar-collapse .show{\n+.show{\n     background-color: $c-green;\n \n }\n \n"
+                },
+                {
+                    "date": 1678017577305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,10 @@\n @import \"reset\";\n \n .menu{\n     position: relative;\n+    display: flex;\n+    align-items: start;\n     height: 100px;\n     z-index: 1000;\n }\n \n"
+                },
+                {
+                    "date": 1678017689496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,11 +35,13 @@\n .menu .menu-item:last-child .nav-link:hover{\n     box-shadow: 10px 24px 54px rgba(0, 0, 0, 0.2);\n }\n \n-.show{\n-    background-color: $c-green;\n \n+@media only screen and (max-width: 767px) {\n+    .navbar-collapse{\n+        background-color: $c-green;\n+    }\n }\n \n .hero {\n     height: 80vh;\n"
+                },
+                {
+                    "date": 1678017834303,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,13 @@\n @media only screen and (max-width: 767px) {\n     .navbar-collapse{\n         background-color: $c-green;\n     }\n+\n+    .navbar-nav{\n+        padding-top: 1rem;\n+        margin-top: 1rem;\n+    }\n }\n \n .hero {\n     height: 80vh;\n"
+                },
+                {
+                    "date": 1678017852234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,13 +39,14 @@\n \n @media only screen and (max-width: 767px) {\n     .navbar-collapse{\n         background-color: $c-green;\n+        margin-top: 1rem;\n     }\n \n     .navbar-nav{\n         padding-top: 1rem;\n-        margin-top: 1rem;\n+\n     }\n }\n \n .hero {\n"
+                },
+                {
+                    "date": 1678017863043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,8 @@\n     }\n \n     .navbar-nav{\n         padding-top: 1rem;\n-\n     }\n }\n \n .hero {\n"
+                },
+                {
+                    "date": 1678017956967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,17 @@\n \n     .navbar-nav{\n         padding-top: 1rem;\n     }\n+\n+    .menu .menu-item:last-child .nav-link{\n+        color: $c-white;\n+        background-color: $c-green;\n+        border: none;\n+        border-radius: none;\n+        padding: 0;\n+        margin: 0;\n+    }\n }\n \n .hero {\n     height: 80vh;\n"
+                },
+                {
+                    "date": 1678017970483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n         color: $c-white;\n         background-color: $c-green;\n         border: none;\n         border-radius: none;\n-        padding: 0;\n+        padding: 1rem;\n         margin: 0;\n     }\n }\n \n"
+                },
+                {
+                    "date": 1678017986164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,9 @@\n         color: $c-white;\n         background-color: $c-green;\n         border: none;\n         border-radius: none;\n-        padding: 1rem;\n+        padding-top: 0.5rem;\n         margin: 0;\n     }\n }\n \n"
+                },
+                {
+                    "date": 1678018004579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,10 @@\n         background-color: $c-green;\n         border: none;\n         border-radius: none;\n         padding-top: 0.5rem;\n+        padding-left: 0;\n+        padding-right: 0;\n         margin: 0;\n     }\n }\n \n"
+                },
+                {
+                    "date": 1678018041441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,9 @@\n @media only screen and (max-width: 767px) {\n     .navbar-collapse{\n         background-color: $c-green;\n         margin-top: 1rem;\n+        margin-bottom: 1rem;\n     }\n \n     .navbar-nav{\n         padding-top: 1rem;\n"
+                },
+                {
+                    "date": 1678018061709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,13 +40,13 @@\n @media only screen and (max-width: 767px) {\n     .navbar-collapse{\n         background-color: $c-green;\n         margin-top: 1rem;\n-        margin-bottom: 1rem;\n     }\n \n     .navbar-nav{\n         padding-top: 1rem;\n+        padding-bottom: 1rem;\n     }\n \n     .menu .menu-item:last-child .nav-link{\n         color: $c-white;\n"
+                },
+                {
+                    "date": 1678018073805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n     }\n \n     .navbar-nav{\n         padding-top: 1rem;\n-        padding-bottom: 1rem;\n+        padding-bottom: .8rem;\n     }\n \n     .menu .menu-item:last-child .nav-link{\n         color: $c-white;\n"
                 }
             ],
             "date": 1677938893885,

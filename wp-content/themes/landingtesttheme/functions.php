@@ -28,23 +28,12 @@ function scripts()
 add_action('wp_enqueue_scripts', 'scripts');
 
 
-
 // theme support
 function config_custom_theme()
 {
-	add_theme_support('post-thumbnails');
-	add_post_type_support('page', 'excerpt');
 	add_theme_support('custom-logo');
-	add_theme_support('widgets');
-	add_theme_support('widgets-block-editor');
-	add_theme_support('woocommerce', [
-		'thumbnail_image_width' => 300,
-		'gallery_thumbnail_image_width' => 100,
-		'single_image_width' => 500,
-	]);
 }
 add_action('after_setup_theme', 'config_custom_theme');
-
 
 
 // register menu

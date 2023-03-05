@@ -10,6 +10,7 @@
         $video = get_field('slider_video'); ?>
     <?php endif; ?>
 
+    <!-- HERO SLIDER -->
     <div class="container-fluid p-0 hero" <?php if ($isVideo) : ?> style="background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 0%), url('<?php echo esc_url($image['url']); ?>');" <?php endif; ?>>
         <?php if (!$isVideo) : ?>
             <video autoplay muted loop class="hero__video">
@@ -49,6 +50,7 @@
 </header>
 
 <main>
+    <!-- CTA - SEARCH DOMAIN -->
     <section>
         <div class="container-fluid">
             <div class="container">
@@ -75,6 +77,7 @@
         </div>
     </section>
 
+    <!-- FEATURES -->
     <section id="features">
         <div class="container-fluid py-5 services">
             <div class="container py-lg-5">
@@ -112,6 +115,7 @@
         </div>
     </section>
 
+    <!-- PRICING -->
     <section id="pricing">
         <div class="container-fluid pricing">
             <div class="container">
@@ -158,6 +162,7 @@
         </div>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact-us">
         <div class="container-fluid py-5">
             <div class="container py-lg-5">

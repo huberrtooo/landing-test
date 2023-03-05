@@ -3,11 +3,23 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1678000726561,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1678052642785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,15 +34,8 @@\n {\n \tadd_theme_support('post-thumbnails');\n \tadd_post_type_support('page', 'excerpt');\n \tadd_theme_support('custom-logo');\n-\tadd_theme_support('widgets');\n-\tadd_theme_support('widgets-block-editor');\n-\tadd_theme_support('woocommerce', [\n-\t\t'thumbnail_image_width' => 300,\n-\t\t'gallery_thumbnail_image_width' => 100,\n-\t\t'single_image_width' => 500,\n-\t]);\n }\n add_action('after_setup_theme', 'config_custom_theme');\n \n \n"
+                },
+                {
+                    "date": 1678052652969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,10 +31,8 @@\n \n // theme support\n function config_custom_theme()\n {\n-\tadd_theme_support('post-thumbnails');\n-\tadd_post_type_support('page', 'excerpt');\n \tadd_theme_support('custom-logo');\n }\n add_action('after_setup_theme', 'config_custom_theme');\n \n"
+                },
+                {
+                    "date": 1678052658780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,18 +27,16 @@\n }\n add_action('wp_enqueue_scripts', 'scripts');\n \n \n-\n // theme support\n function config_custom_theme()\n {\n \tadd_theme_support('custom-logo');\n }\n add_action('after_setup_theme', 'config_custom_theme');\n \n \n-\n // register menu\n register_nav_menus([\n \t'header-menu' => __('Menu główne'),\n \t'footer-features' => __('Menu Features'),\n"
                 }
             ],
             "date": 1678000726561,

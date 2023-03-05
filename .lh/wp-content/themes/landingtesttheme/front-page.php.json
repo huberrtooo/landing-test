@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 143,
+            "activePatchIndex": 144,
             "patches": [
                 {
                     "date": 1677938769313,
@@ -580,6 +580,10 @@
                 {
                     "date": 1678018353065,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n                     </div>\n                     <div class=\"pt-3 hero__desc\">\n                         <p><?php the_field('slider_desc'); ?></p>\n                     </div>\n-                    <div class=\"d-flex pt-4\">\n+                    <div class=\"d-lg-flex pt-4\">\n                         <?php\n                         $link1 = get_field('slider_button_1');\n                         $link2 = get_field('slider_button_2');\n                         if ($link1) : ?>\n"
+                },
+                {
+                    "date": 1678052599170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n     else :\n         $video = get_field('slider_video'); ?>\n     <?php endif; ?>\n \n+    <!-- HERO SLIDER -->\n     <div class=\"container-fluid p-0 hero\" <?php if ($isVideo) : ?> style=\"background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 0%), url('<?php echo esc_url($image['url']); ?>');\" <?php endif; ?>>\n         <?php if (!$isVideo) : ?>\n             <video autoplay muted loop class=\"hero__video\">\n                 <source src=\"<?php echo $video['url']; ?>\" type=\"video/mp4\">\n@@ -48,8 +49,9 @@\n     </div>\n </header>\n \n <main>\n+    <!-- CTA - SEARCH DOMAIN -->\n     <section>\n         <div class=\"container-fluid\">\n             <div class=\"container\">\n                 <div class=\"row px-2\">\n@@ -74,8 +76,9 @@\n             </div>\n         </div>\n     </section>\n \n+    <!-- FEATURES -->\n     <section id=\"features\">\n         <div class=\"container-fluid py-5 services\">\n             <div class=\"container py-lg-5\">\n                 <div class=\"row text-center\">\n@@ -111,8 +114,9 @@\n             </div>\n         </div>\n     </section>\n \n+    <!-- PRICING -->\n     <section id=\"pricing\">\n         <div class=\"container-fluid pricing\">\n             <div class=\"container\">\n                 <div class=\"row text-center\">\n@@ -157,8 +161,9 @@\n             </div>\n         </div>\n     </section>\n \n+    <!-- CONTACT -->\n     <section id=\"contact-us\">\n         <div class=\"container-fluid py-5\">\n             <div class=\"container py-lg-5\">\n                 <div class=\"row px-2\">\n"
                 }
             ],
             "date": 1677938769313,

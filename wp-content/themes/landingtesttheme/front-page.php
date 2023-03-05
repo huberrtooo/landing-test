@@ -22,13 +22,13 @@
                                 endif; ?> ">
             <div class="row">
                 <div class="col-12 col-lg-6 hero__content">
-                    <div>
+                    <div data-aos="fade-up">
                         <h1 class="header-h1"><?php the_field('slider_header'); ?></h1>
                     </div>
-                    <div class="pt-3 hero__desc">
+                    <div class="pt-3 hero__desc" data-aos="fade-up" data-aos-delay="300">
                         <p><?php the_field('slider_desc'); ?></p>
                     </div>
-                    <div class="d-lg-flex pt-4">
+                    <div class="d-lg-flex pt-4" data-aos="fade-up" data-aos-delay="600">
                         <?php
                         $link1 = get_field('slider_button_1');
                         $link2 = get_field('slider_button_2');
@@ -52,7 +52,7 @@
 <main>
     <!-- CTA - SEARCH DOMAIN -->
     <section>
-        <div class="container-fluid">
+        <div class="container-fluid" data-aos="fade-up" data-aos-delay="1000">
             <div class="container">
                 <div class="row px-2">
                     <div class="col px-3 py-5 px-lg-5 py-lg-0 cta">
@@ -81,7 +81,7 @@
     <section id="features">
         <div class="container-fluid py-5 services">
             <div class="container py-lg-5">
-                <div class="row text-center">
+                <div class="row text-center" data-aos="fade-up">
                     <div class="col-12">
                         <h4 class="header-h4"><?php the_field('services_subheader'); ?></h4>
                     </div>
@@ -94,9 +94,10 @@
                 </div>
                 <div class="row pt-lg-5">
                     <?php
+                    $count = 300;
                     if (have_rows('services_boxes')) :
                         while (have_rows('services_boxes')) : the_row(); ?>
-                            <div class="col-12 col-md-6 col-lg-3 p-2">
+                            <div class="col-12 col-md-6 col-lg-3 p-2" data-aos="zoom-in" data-aos-delay="<?php echo($count); ?>">
                                 <div class="services__box">
                                     <?php $icon = get_sub_field('icon');
                                     if (!empty($icon)) : ?>
@@ -106,7 +107,7 @@
                                     <p><?php the_sub_field('desc'); ?></p>
                                 </div>
                             </div>
-                    <?php endwhile;
+                    <?php $count+=300; endwhile;
                     else :
                         echo ('Brak dodanych usług');
                     endif; ?>
@@ -119,7 +120,7 @@
     <section id="pricing">
         <div class="container-fluid pricing">
             <div class="container">
-                <div class="row text-center">
+                <div class="row text-center" data-aos="fade-up">
                     <div class="col-12">
                         <h4 class="header-h4"><?php the_field('pricing_subheader'); ?></h4>
                     </div>
@@ -133,8 +134,9 @@
                 <div class="row pt-lg-5">
                     <?php
                     if (have_rows('pricing_boxes')) :
+                        $count = 300;
                         while (have_rows('pricing_boxes')) : the_row(); ?>
-                            <div class="col-12 col-lg-4 p-2 p-lg-3">
+                            <div class="col-12 col-lg-4 p-2 p-lg-3" data-aos="zoom-in" data-aos-delay="<?php echo($count); ?>">
                                 <div class="pricing__box <?php if (get_sub_field('star')) : echo ('pricing__box--green');
                                                             endif; ?>">
                                     <div class="pricing__name"><?php the_sub_field('name'); ?></div>
@@ -153,7 +155,7 @@
                                     </div>
                                 </div>
                             </div>
-                    <?php endwhile;
+                    <?php $count+=300; endwhile;
                     else :
                         echo ('Brak dodanych cen');
                     endif; ?>
@@ -163,7 +165,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact-us">
+    <section id="contact-us" data-aos="fade-up">
         <div class="container-fluid py-5">
             <div class="container py-lg-5">
                 <div class="row px-2">
